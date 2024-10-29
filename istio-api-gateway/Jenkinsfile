@@ -33,6 +33,7 @@ podTemplate(yaml: """
   ) { 
   node(POD_LABEL) {
     stage('Build with Kaniko') {
+      echo $buildNum
     //Image build 
       container('kaniko') {
         //kaniko 에서 빌드하기 위해 소스코드 clone
