@@ -32,6 +32,11 @@ podTemplate(yaml: """
 """
   ) {
 
-  
+  node(POD_LABEL) {
+    stage('Build with Kaniko') {
+	  
+
+    }
+  }
 }
 
