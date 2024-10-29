@@ -6,6 +6,7 @@ def githubCredential = "github-credential"
 def registryCredential = "ncr-credential" 
 def githubURL = "${MY_MERCURY_REPO_URL}"
 podTemplate(yaml: """
+              apiVersion: v1
               kind: Pod
               metadata:
                 name: kaniko-image-build-pod
