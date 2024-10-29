@@ -21,7 +21,6 @@ podTemplate(yaml: """
                   volumeMounts:
                     - name: docker-config
                       mountPath: /kaniko/.docker
-                  tty: true
                 volumes:
                     - name: docker-config
                       secret:
