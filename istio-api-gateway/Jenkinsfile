@@ -32,8 +32,6 @@ podTemplate(yaml: """
 """
   ) {
 
-  node(POD_LABEL) {
-    
-  }
+  
 }
 
